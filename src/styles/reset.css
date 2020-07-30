@@ -50,7 +50,6 @@ table {
 }
 
 html, body{
-	font-size:1px;
 	min-width: 320px;
 }
 
@@ -59,4 +58,5 @@ html, body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	background-color: var(--color-black-dark);
 }

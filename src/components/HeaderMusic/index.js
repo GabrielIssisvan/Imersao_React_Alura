@@ -5,7 +5,7 @@ import LogoMusic from '../LogoMusic';
 const HeaderMusic = styled.header`
 display:flex;
 justify-content:space-between;
-align:center;
+align-content:center;
 padding:30px 40px;
 background-color:var(--color-black-dark);
 border-bottom:2px solid var(--color-primary-medium);

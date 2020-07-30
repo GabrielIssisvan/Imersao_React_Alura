@@ -5,7 +5,7 @@ const LinkMusic = styled.a`
     color: var(--color-primary-medium);
     cursor:pointer;
     text-decoration:none;
-    font-size:16rem;
+    font-size:1rem;
 `;
 
 export default LinkMusic;

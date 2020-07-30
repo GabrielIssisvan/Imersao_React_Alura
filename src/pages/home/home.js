@@ -1,22 +1,15 @@
 import React from 'react';
-import HeaderMusic from './components/HeaderMusic/index.js'
-import ButtonMusic from './components/ButtonMusic/index.js'
-import LogoMusic from './components/LogoMusic/index.js';
-import './styles/settings/colors.css';
-import './styles/reset.css';
-import LinkMusic from './components/LinkMusic/index.js';
-import FooterMusic from './components/FooterMusic/index.js';
-import BannerMain from './components/BannerMain';
-import Carousel from './components/Carousel';
-import dadosIniciais from './data/dados_iniciais.json';
+import PageDefault from '../../components/PageDefault';
+import BannerMain from '../../components/BannerMain';
+import Carousel from '../../components/Carousel';
+import '../../styles/settings/colors.css';
+import '../../styles/reset.css';
+import dadosIniciais from '../../data/dados_iniciais.json';
 
-function App() {
+function Home() {
   return (
-    <div style={{ background: "#141414" }}>
-    <HeaderMusic>
-      <LogoMusic/>
-      <ButtonMusic >Novo Video</ButtonMusic>
-    </HeaderMusic>
+    <>
+<PageDefault>
 
     <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
@@ -46,14 +39,9 @@ function App() {
         category={dadosIniciais.categorias[5]}
       />     
 
-    <FooterMusic>
-      <LogoMusic/>
-     <p>Site feito na <strong>#ImersãoReact</strong> da {' '}
-       <LinkMusic>Alura</LinkMusic></p>
-    </FooterMusic>
-
-    </div>
+</PageDefault>
+    </>
   );
-}
+};
 
-export default App;
+export default Home;
